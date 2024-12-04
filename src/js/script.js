@@ -8,3 +8,6 @@ const image = document.querySelector("#lightbox img");
 
 // Ajoute un écouteur d'événements pour détecter les clics sur tout le doc
 document.addEventListener("click", function (e) {
+
+// Vérifie si l'élément cliqué a l'attribut "data-full-img" ou si la lightbox est déjà ouverte
+if (e.target.matches("data-full-img") || lightBox.open {
