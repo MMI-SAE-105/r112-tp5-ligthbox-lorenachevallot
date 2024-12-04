@@ -18,3 +18,7 @@ border-radius: 20px/* Arrondit les coins de l'élément avec un rayon de 20px */
 border: 5px solid darkblue/* Ajoute une bordure de 5px d'epaisseur de couleur bleu foncé */
 }
 
+#lightbox[open]::backdrop {
+background-color: darkorange;/* Définit la couleur de fond / Définit l'opacité à 0.3 (30%) */
+transition: 4s;/* Applique une transition en sur 4 secondes */
+}
