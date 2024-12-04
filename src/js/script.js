@@ -10,10 +10,10 @@ const image = document.querySelector("#lightbox img");
 document.addEventListener("click", function (e) {
 
 // Vérifie si l'élément cliqué a l'attribut "data-full-img" ou si la lightbox est déjà ouverte
-if (e.target.matches("data-full-img") || lightBox.open) {
+if (e.target.matches("[data-full-img]") || lightBox.open) {
 
     // Ferme la lightbox si elle est déjà ouverte
-    if (lighBox.open) {
+    if (lightBox.open) {
         lightBox.close();
     } else {
         // Sinon, ouvre la lightbox
@@ -21,6 +21,7 @@ if (e.target.matches("data-full-img") || lightBox.open) {
     }
 
 // Remplace la source de l'image par la valeur de l'attribut "data-full-img" de l'élément cliqué
-    image.src = e.dataset.fullImg;
+    image.src = e.target.dataset.fullImg;
+}
 
 });
