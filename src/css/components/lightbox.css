@@ -8,13 +8,14 @@
   to {
     scale: 1; /* échelle de 1 (taille normale) */
   }
+}
 
 
 #lightbox[open] {
 padding: 50px;/* Ajoute un padding de 50px autour de l'élément */
-animation: openLightbox 0.5s/* Applique l'animation "openLightbox" sur 0.5 secondes */
-border-radius: 20px/* Arrondit les coins de l'élément avec un rayon de 20px */
-border: 5px solid darkblue/* Ajoute une bordure de 5px d'epaisseur de couleur bleu foncé */
+animation: openLightbox 0.5s;/* Applique l'animation "openLightbox" sur 0.5 secondes */
+border-radius: 20px;/* Arrondit les coins de l'élément avec un rayon de 20px */
+border: 5px solid darkblue;/* Ajoute une bordure de 5px d'epaisseur de couleur bleu foncé */
 }
 
 #lightbox[open]::backdrop {
@@ -23,6 +24,6 @@ transition: ease 4s;/* Applique une transition en sur 4 secondes */
 }
 
 #lightbox img {
-width: 60;/* largeur de l'image = 60% de la largeur de la fenêtre */
+width: 60vw;/* largeur de l'image = 60% de la largeur de la fenêtre */
 height: auto/* Ajuste automatiquement la hauteur */
 }
