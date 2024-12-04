@@ -11,3 +11,11 @@ document.addEventListener("click", function (e) {
 
 // Vérifie si l'élément cliqué a l'attribut "data-full-img" ou si la lightbox est déjà ouverte
 if (e.target.matches("data-full-img") || lightBox.open) {
+
+    // Ferme la lightbox si elle est déjà ouverte
+    if (lighBox.open) {
+        lightBox.close();
+    } else {
+        // Sinon, ouvre la lightbox
+        lightBox.showModal();
+    }
