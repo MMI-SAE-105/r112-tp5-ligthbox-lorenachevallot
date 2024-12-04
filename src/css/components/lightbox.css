@@ -3,8 +3,7 @@
 */
 @keyframes openLightbox {
     from {
-        scale: 0;
-        /* échelle de 0 (invisible) */
+        scale: 0; /* échelle de 0 (invisible) */
   }
   to {
     scale: 1; /* échelle de 1 (taille normale) */
