@@ -1,3 +1,20 @@
 /**
 * Lightbox
 */
+@keyframes openLightbox {
+    from {
+        scale: 0;
+        /* échelle de 0 (invisible) */
+  }
+  to {
+    scale: 1; /* échelle de 1 (taille normale) */
+  }
+
+
+#lightbox[open] {
+padding: 50px;/* Ajoute un padding de 50px autour de l'élément */
+animation: openLightbox 0.5s/* Applique l'animation "openLightbox" sur 0.5 secondes */
+border-radius: 20px/* Arrondit les coins de l'élément avec un rayon de 20px */
+border: 5px solid darkblue/* Ajoute une bordure de 5px d'epaisseur de couleur bleu foncé */
+}
+
