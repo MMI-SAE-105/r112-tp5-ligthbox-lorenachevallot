@@ -19,3 +19,8 @@ if (e.target.matches("data-full-img") || lightBox.open) {
         // Sinon, ouvre la lightbox
         lightBox.showModal();
     }
+
+// Remplace la source de l'image par la valeur de l'attribut "data-full-img" de l'élément cliqué
+    image.src = e.dataset.fullImg;
+
+});
